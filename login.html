@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kerala Tourism | Login </title>
+  <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="style.css"> 
+<style>
+    .navbar{
+        border-radius: 0px;
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+    #nav-margin1{
+        margin-top: 50px;
+    }
+    .nav-item{
+        font-size: 14px;
+    }
+    body{
+        background: linear-gradient(
+45deg
+, #1e71ef, #563e3ec7);
+    }
+    .nodisplay{
+        display: none;
+        color: red;
+    }
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img class="navbar-logo" src="img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul id="nav-margin1" class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Districts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="login.html">Login</a>
+                </li>
+    
+            </ul> 
+    
+    
+        </div>
+    </nav>
+    
+
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Login</h2>
+      <input type="text" class="form-control " id="username" name="username" placeholder="Username" required="" onblur="ValidateName()" />
+      <p class="nodisplay" id="userdisplay">Username should contain only letters.</p>
+      <input type="password" class="form-control " id="exampleInputPassword1" name="password" placeholder="Password" required="" onblur="CheckPassword()"/>      
+      <label class="checkbox">
+        <p class="nodisplay" id="passdisplay">Enter the password in correct format.</p>
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <a href="#">Forgot Password?</a>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin-top: 10px;">Login</button>   
+    </form>
+  </div>
+<!-- partial -->
+  <script src="js/validate.js"></script>
+</body>
+</html>
